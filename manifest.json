@@ -1,20 +1,27 @@
 {
   "manifest_version": 2,
-  "name": Transcriptify Youtube",
+  "name": "Transcriptify Youtube",
   "version": "1.0",
 
   "description": "Creates a transcript file from web scraping/using the YouTube API to find the captions within the video.",
-  "homepage_url": "https://github.com/kyriannn/transcriptify-youtube"
+  "homepage_url": "https://github.com/kyriannn/transcriptify-youtube",
   "icons": {
   },
 
   "permissions": ["activeTab"],
 
   "browser_action": {
-    "default_icon": "",
-    "default_title": "",
-    "default_popup": ""
+    "default_icon": "icons/",
+    "default_title": "Transcriptify Youtube",
+    "default_popup": "popup/transcriptify.html"
   },
+
+  "content_scripts": [
+    {
+      "matches":[""],
+      "js":["transcriptify-youtube.js"]
+    }
+  ],
 
   "web_accessible_resources": [
    
