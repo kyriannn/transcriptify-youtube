@@ -10,5 +10,6 @@ Utilizes the Youtube API
 ## Changes
 
 - 01/01/2024 - made changes to the `manifest.json` file, as well as update the `/popup/transcripftify.html` file.
+- 02/01/2024 - added an .env file
 
 
