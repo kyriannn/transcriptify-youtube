@@ -6,12 +6,22 @@
     </head>
 <body>
     <div class="popup">
-        <div class="popup-state-default">
+        <div class="popup-state-searching">
+            <div id="search-error" class="error">
+                <p>Unable to find captions in current window.</p>
+            </div>
             <button class="popup-button">Find Captions</button>
         </div>
-        <div class="popup-state-error"></div>
-        <div class="popup-state-success">
-            
+        <div class="popup-state-found">
+            <div id="download-error" class="error">
+                <p>Unable to download captions from current Youtube video.</p>
+            </div>
+            <form name="download_form">
+                <label for="download_location">Download Location
+                    <input type="text" name="download_location" placeholder="Enter a download location..."/>
+                </label>
+                <button class="popup-button" name="download_captions">Download</button>
+            </form>
         </div>
     </div>
     <script src="transcriptify.js"></script>
