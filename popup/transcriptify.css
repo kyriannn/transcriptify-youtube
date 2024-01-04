@@ -1,11 +1,8 @@
-.popup{
-
+/*errors*/
+.error{
+    visibility: hidden;
 }
 
-#popup-state-error{
-
-}
-
-#popup-state-success{
-
+#popup-state-found{
+    visibility: hidden;
 }
